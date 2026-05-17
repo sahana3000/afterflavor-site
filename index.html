@@ -10,7 +10,7 @@
 :root{--black:#0d0d0d;--acid:#c8f542;--charcoal:#2a2a26;--card-bg:#1a1a16;--muted:#a8a49c;--warm:#6a6a62;--cream:#f5f0e8;--ink:#1a1a14;--ink-mid:rgba(26,26,20,0.55);--ink-light:rgba(26,26,20,0.35);--ink-rule:rgba(26,26,20,0.1)}
 body{font-family:'Krub',sans-serif;background:var(--black);color:#e8e4dc;font-size:15px;line-height:1.6;overflow-x:hidden}
 h1,h2,h3,.logo,.stat-num,.step-title,.pain-title,.blog-title,.cta-title,.testi-name,.course-name,.af-name,.menu-name,.section-headline{font-family:'Inter',sans-serif}
-.lbl{font-size:0.6rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--acid);margin-bottom:0.85rem;display:block}
+.lbl{font-size:0.6rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--acid);margin-bottom:0.85rem;display:block;text-align:center}
 @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
 /* NAV */
@@ -32,15 +32,15 @@ h1,h2,h3,.logo,.stat-num,.step-title,.pain-title,.blog-title,.cta-title,.testi-n
 /* HERO */
 .hero{padding:6rem 3rem 5rem;position:relative;overflow:hidden;background:var(--black)}
 .hero::before{content:'';position:absolute;top:-180px;right:-180px;width:600px;height:600px;background:radial-gradient(circle,rgba(200,245,66,0.07) 0%,transparent 70%);pointer-events:none}
-.hero h1{font-family:'Inter',sans-serif;font-weight:800;font-size:clamp(2.4rem,5vw,4rem);line-height:0.98;letter-spacing:-0.04em;max-width:16ch;margin-bottom:1.5rem;color:#fff;position:relative;z-index:1}
+.hero h1{font-family:'Inter',sans-serif;font-weight:800;font-size:clamp(2.4rem,5vw,4rem);line-height:0.98;letter-spacing:-0.04em;max-width:16ch;margin:0 auto 1.5rem;color:#fff;position:relative;z-index:1;text-align:center}
 .hero h1 .accent{color:var(--acid);font-style:italic}
-.hero-sub{font-size:1rem;font-weight:300;color:#b8b4ac;max-width:48ch;margin-bottom:2.5rem;line-height:1.8;position:relative;z-index:1}
-.hero-actions{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:4rem;position:relative;z-index:1}
+.hero-sub{font-size:1rem;font-weight:300;color:#b8b4ac;max-width:48ch;margin:0 auto 2.5rem;line-height:1.8;position:relative;z-index:1;text-align:center}
+.hero-actions{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:4rem;position:relative;z-index:1;justify-content:center}
 .btn-ghost{background:transparent;color:#fff;font-family:'Krub',sans-serif;font-size:0.85rem;font-weight:500;padding:0.75rem 1.75rem;border-radius:100px;border:1px solid rgba(255,255,255,0.22);text-decoration:none;display:inline-block;transition:border-color 0.2s}
 .btn-ghost:hover{border-color:rgba(255,255,255,0.5)}
 .btn-acid{background:var(--acid);color:#0d0d0d;font-family:'Krub',sans-serif;font-weight:700;font-size:0.85rem;padding:0.75rem 1.75rem;border-radius:100px;border:none;cursor:pointer;text-decoration:none;display:inline-block;transition:opacity 0.2s}
 .btn-acid:hover{opacity:0.88}
-.hero-stats{display:flex;gap:3rem;padding-top:2.25rem;border-top:1px solid rgba(255,255,255,0.07);position:relative;z-index:1;flex-wrap:wrap}
+.hero-stats{display:flex;gap:3rem;padding-top:2.25rem;border-top:1px solid rgba(255,255,255,0.07);position:relative;z-index:1;flex-wrap:wrap;justify-content:center;text-align:center}
 .stat-num{font-family:'Inter',sans-serif;font-weight:800;font-size:1.9rem;color:#fff;line-height:1}
 .stat-num span{color:var(--acid)}
 .stat-lbl{font-size:0.68rem;color:var(--warm);letter-spacing:0.03em;margin-top:0.25rem}
@@ -54,19 +54,19 @@ h1,h2,h3,.logo,.stat-num,.step-title,.pain-title,.blog-title,.cta-title,.testi-n
 /* PROBLEM */
 .problem{padding:5.5rem 3rem;background:var(--charcoal)}
 .problem-layout{display:grid;grid-template-columns:1.1fr 0.9fr;gap:5rem;align-items:start;margin-top:2.25rem}
-.problem-hook{font-family:'Inter',sans-serif;font-size:2.4rem;font-weight:800;color:#fff;letter-spacing:-0.03em;line-height:1.1;margin-bottom:1.5rem}
-.problem-body{font-size:1.05rem;font-weight:300;color:#b0aba2;line-height:1.9;max-width:46ch}
+.problem-hook{font-family:'Inter',sans-serif;font-size:2.4rem;font-weight:800;color:#fff;letter-spacing:-0.03em;line-height:1.1;margin-bottom:1.5rem;text-align:center}
+.problem-body{font-size:1.05rem;font-weight:300;color:#b0aba2;line-height:1.9;max-width:46ch;text-align:center;margin-left:auto;margin-right:auto}
 .problem-body strong{color:#e0dcd4;font-weight:600}
 .pain-cards{display:flex;flex-direction:column;gap:0.85rem}
-.pain-card{background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:1.25rem 1.5rem}
+.pain-card{background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:1.25rem 1.5rem;text-align:center}
 .pain-title{font-family:'Inter',sans-serif;font-size:0.88rem;font-weight:700;color:#fff;margin-bottom:0.5rem}
 .pain-desc{font-size:0.78rem;font-weight:300;color:var(--muted);line-height:1.65}
 
 /* MENU SECTION */
 .menu-section{padding:5.5rem 3rem;background:var(--black)}
 .menu-section-head{margin-bottom:3.5rem}
-.section-headline{font-family:'Inter',sans-serif;font-size:2rem;font-weight:800;color:#fff;letter-spacing:-0.03em;line-height:1.1;margin-bottom:1rem;max-width:22ch}
-.section-sub{font-size:0.88rem;font-weight:300;color:var(--muted);line-height:1.8;max-width:52ch}
+.section-headline{font-family:'Inter',sans-serif;font-size:2rem;font-weight:800;color:#fff;letter-spacing:-0.03em;line-height:1.1;margin-bottom:1rem;max-width:22ch;text-align:center;margin-left:auto;margin-right:auto}
+.section-sub{font-size:0.88rem;font-weight:300;color:var(--muted);line-height:1.8;max-width:52ch;text-align:center;margin-left:auto;margin-right:auto}
 .section-sub strong{color:#e0dcd4;font-weight:600}
 
 /* MENU CARD */
@@ -134,11 +134,11 @@ h1,h2,h3,.logo,.stat-num,.step-title,.pain-title,.blog-title,.cta-title,.testi-n
 .blog-card:hover{border-color:rgba(200,245,66,0.28);transform:translateY(-2px)}
 .blog-thumb{height:155px;position:relative;overflow:hidden}
 .blog-tag{position:absolute;top:0.85rem;left:0.85rem;background:var(--acid);color:#0d0d0d;font-size:0.55rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:0.2rem 0.55rem;border-radius:100px}
-.blog-body{padding:1.25rem 1.35rem 0.75rem}
-.blog-meta{font-size:0.68rem;color:var(--warm);margin-bottom:0.5rem;display:flex;gap:0.75rem}
+.blog-body{padding:1.25rem 1.35rem 0.75rem;text-align:center}
+.blog-meta{font-size:0.68rem;color:var(--warm);margin-bottom:0.5rem;display:flex;gap:0.75rem;justify-content:center}
 .blog-title{font-family:'Inter',sans-serif;font-weight:700;font-size:0.9rem;line-height:1.3;margin-bottom:0.5rem;color:#fff}
 .blog-excerpt{font-size:0.77rem;font-weight:300;color:#a0a09a;line-height:1.65;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.blog-footer{padding:0.75rem 1.35rem 1.1rem;display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(255,255,255,0.05);margin-top:0.75rem}
+.blog-footer{padding:0.75rem 1.35rem 1.1rem;display:flex;align-items:center;justify-content:center;gap:1.5rem;border-top:1px solid rgba(255,255,255,0.05);margin-top:0.75rem}
 .read-more{font-size:0.72rem;font-weight:600;color:var(--acid)}
 .read-more::after{content:' →'}
 .blog-date{font-size:0.68rem;color:#4a4a42}
@@ -327,7 +327,7 @@ h1,h2,h3,.logo,.stat-num,.step-title,.pain-title,.blog-title,.cta-title,.testi-n
 <div class="process" id="process">
   <span class="lbl">How it works</span>
   <div class="section-headline" style="font-size:1.85rem;margin-bottom:0.75rem">How We Cook</div>
-  <p style="font-size:0.88rem;font-weight:300;color:var(--muted);max-width:48ch;line-height:1.8">Every engagement follows the same four steps. The output looks different every time, because your brand, your buyers, and your market are different every time.</p>
+  <p style="font-size:0.88rem;font-weight:300;color:var(--muted);max-width:48ch;line-height:1.8;text-align:center;margin:0 auto">Every engagement follows the same four steps. The output looks different every time, because your brand, your buyers, and your market are different every time.</p>
   <div class="process-steps">
     <div class="process-step">
       <div class="step-num">01</div>
@@ -355,7 +355,7 @@ h1,h2,h3,.logo,.stat-num,.step-title,.pain-title,.blog-title,.cta-title,.testi-n
 <div class="testi">
   <span class="lbl">What people say</span>
   <div class="section-headline" style="font-size:1.85rem;margin-bottom:0.75rem">The Taste that Lingers After the Work Is Done</div>
-  <p style="font-size:0.88rem;font-weight:300;color:var(--muted);max-width:40ch;line-height:1.8;margin-bottom:0">We let the results do the talking.</p>
+  <p style="font-size:0.88rem;font-weight:300;color:var(--muted);max-width:40ch;line-height:1.8;margin:0 auto;text-align:center">We let the results do the talking.</p>
   <div class="testi-carousel">
     <div class="testi-slides">
       <div class="testi-track-inner" id="testiTrack">
@@ -417,7 +417,7 @@ h1,h2,h3,.logo,.stat-num,.step-title,.pain-title,.blog-title,.cta-title,.testi-n
 <div class="blog" id="blog">
   <span class="lbl">Food for Thought</span>
   <div class="section-headline" style="font-size:1.85rem;margin-bottom:0.75rem">Food for Thought</div>
-  <p style="font-size:0.88rem;font-weight:300;color:var(--muted);max-width:44ch;line-height:1.8">Honest thinking on positioning, brand, and what actually moves buyers. Written by people who've done it.</p>
+  <p style="font-size:0.88rem;font-weight:300;color:var(--muted);max-width:44ch;line-height:1.8;text-align:center;margin:0 auto">Honest thinking on positioning, brand, and what actually moves buyers. Written by people who've done it.</p>
   <div class="blog-grid">
     <div class="blog-card">
       <div class="blog-thumb" style="background:linear-gradient(135deg,#1a2a12,#0d150a)"><span class="blog-tag">Featured</span></div>
